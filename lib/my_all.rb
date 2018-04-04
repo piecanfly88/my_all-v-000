@@ -1,13 +1,13 @@
 require 'pry'
 
 def my_all?(collection)
-  yielded_collection = []
+  block_condition_met = []
   i = 0
   while i < collection.length
-    yielded_collection << yield(collection[i])
+    block_condition_met << yield(collection[i])
     i += 1
   end
-  yielded_collection.all?
+  block_condition_met.all?
 end
 
 binding.pry
