@@ -7,7 +7,7 @@ def my_all?(collection)
     yielded_collection << yield(collection[i])
     i += 1
   end
-  yielded_collection
+  yielded_collection.all?
 end
 
 binding.pry
