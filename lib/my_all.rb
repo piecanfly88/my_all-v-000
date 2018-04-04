@@ -1,5 +1,3 @@
-require 'pry'
-
 def my_all?(collection)
   block_condition_met = []
   i = 0
@@ -9,5 +7,3 @@ def my_all?(collection)
   end
   block_condition_met.all?
 end
-
-binding.pry
